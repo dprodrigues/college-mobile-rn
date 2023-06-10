@@ -40,4 +40,26 @@ export const styles = StyleSheet.create({
   buttonText: {
     color: "#fff",
   },
+  sidebar__content: {
+    backgroundColor: "#fff",
+    bottom: 0,
+    justifyContent: "space-between",
+    paddingHorizontal: 25,
+    paddingVertical: 23,
+    position: "absolute",
+    right: 0,
+    top: 0,
+    width: "80%",
+    zIndex: 15,
+  },
+  sidebar__background: {
+    backgroundColor: "#000",
+    bottom: 0,
+    left: 0,
+    opacity: 0.4,
+    position: "absolute",
+    right: 0,
+    top: 0,
+    zIndex: 10,
+  },
 });
