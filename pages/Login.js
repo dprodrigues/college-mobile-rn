@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, Alert } from "react-native";
 import { Link } from "@react-navigation/native";
 import Input from "../components/Input";
 import { styles } from "../styles";
@@ -35,6 +35,8 @@ export default function Login({ navigation }) {
       setErrorMessage("Senha não pode estar vazia");
       return;
     }
+
+    Alert.alert("Login bem sucedido");
 
     setEmail("");
     setPassword("");
