@@ -21,10 +21,10 @@ export default function App() {
     </TouchableOpacity>
   );
 
-  const withSidebar = (Component) => () => {
+  const withSidebar = (Component) => (props) => {
     return (
       <>
-        <Component />
+        <Component {...props} />
 
         <Sidebar open={open} setOpen={setOpen} />
       </>
